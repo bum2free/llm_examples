@@ -1,0 +1,21 @@
+User: Hi
+Assistant: Hello! How can I assist you today?
+User: Write an email to John
+Assistant: Could you please provide more details on what you would like to
+include in the email to John? For example, the subject of the email, the main
+points you'd like to address, and any specific message or information you want
+to convey.
+User: The subject of the mail is Hello
+Assistant: Could you please provide more details about the main points or
+specific message you want to include in the email to John? This will help me
+craft a more personalized and effective message.
+User: The body is 'Meet me on Thursday at 4 p.m.
+Assistant: Could you please specify where you would like to meet on Thursday
+at 4 p.m., or if there is a specific reason for the meeting? This information
+will help me complete the email.
+User: no other information
+Assistant: Could you please provide John's email address so that I can
+properly address and send the email?
+User: the recipient is john@mail
+DEBUG perform action=ACTION_WRITE_EMAIL | subject:Hello, recipient:john@mail.com, message:Meet me on Thursday at 4 p.m.
+Assistant: The email has been sent to john@mail.com. If you need any further assistance or have more messages to send, feel free to let me know!

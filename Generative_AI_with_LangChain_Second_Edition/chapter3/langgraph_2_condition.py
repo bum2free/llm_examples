@@ -1,3 +1,5 @@
+# from: https://github.com/benman1/generative_ai_with_langchain/blob/second_edition/chapter3/langgraph_intro.ipynb
+
 from langgraph.graph import StateGraph, START, END, Graph
 from typing_extensions import TypedDict
 from typing import Literal
@@ -33,7 +35,7 @@ builder.add_edge("generate_application", END)
 graph = builder.compile()
 
 #png_bytes = graph.get_graph().draw_mermaid_png()
-#out_path = "langgraph_2_condition.png"
+#out_path = "langgraph_2.png"
 #with open(out_path, "wb") as f:
 #    f.write(png_bytes)
 

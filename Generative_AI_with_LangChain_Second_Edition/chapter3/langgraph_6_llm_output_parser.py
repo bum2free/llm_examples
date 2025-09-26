@@ -83,6 +83,8 @@ builder = StateGraph(JobApplicationState)
 builder.add_node("analyze_job_description", analyze_job_description)
 builder.add_node("generate_application", generate_application)
 builder.add_edge(START, "analyze_job_description")
+# By default, the return value of is_suitable_condition as the name of the node to go to next; see langgraph_2_condition.py
+# You can optionally provide a dictionary that maps the is_suitable_condition's output to the name of the next node.
 builder.add_conditional_edges(
     "analyze_job_description", is_suitable_condition,
      {True: "generate_application", False: END})

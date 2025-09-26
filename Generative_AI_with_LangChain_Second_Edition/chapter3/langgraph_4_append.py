@@ -10,7 +10,7 @@ class JobApplicationState(TypedDict):
     job_description: str
     is_suitable: bool
     application: str
-    actions: Annotated[list[str], add]
+    actions: Annotated[list[str], add] # The Annotated type lets you associate extra information (metadata) with a type, but the first argument (here, list[str]) is always the real type, and everything after it is metadata.
 
 def analyze_job_description(state):
     print("...Analyzing a provided job description ...")

@@ -14,4 +14,6 @@ assert parser.invoke("YES\n") == IsSuitableJobEnum.YES
 assert parser.invoke(" YES \n") == IsSuitableJobEnum.YES
 assert parser.invoke(HumanMessage(content=" YES \n")) == IsSuitableJobEnum.YES
 
-print(IsSuitableJobEnum.YES.value)
+print(IsSuitableJobEnum.YES.value) #YES
+print(parser.invoke("NO")) #IsSuitableJobEnum.NO
+#print(parser.invoke("Dummy")) # it raises error: ValueError: 'Dummy' is not a valid IsSuitableJobEnum
